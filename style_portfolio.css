@@ -152,12 +152,6 @@ body::-webkit-scrollbar-thumb:hover {
   margin-left: 5px;
 }
 
-.jumbotron .portfolioLinks:hover{
-  text-decoration: none;
-  box-shadow: 0 0 10px #e74c3c,
-              0 0 10px #e74c3c;
-}
-
 .jumbotron h5{
   text-align: center;
   color: #555!important;
@@ -182,6 +176,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding-bottom: 10px;
   font-weight: 500;
   font-size: 5vh;
+  margin-top: 20px;
 }
 
 .jumbotron h6::after{
@@ -201,16 +196,7 @@ body::-webkit-scrollbar-thumb:hover {
 .row.no-padding [class*=col-]{
   padding: 0;
 }
-.portfolio img:hover{
-  transform: scale(1.2);
-  cursor: zoom-in;
-}
 
-.portfolio .postr:hover{
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.5);
-  transition: .5s;
-  transform: scale(0.9);
-}
 .portfolio {
   overflow: hidden;
 }
@@ -218,11 +204,6 @@ body::-webkit-scrollbar-thumb:hover {
 .portfolio .template{
   opacity: 1;
   transition: .3s ease-in-out;
-}
-.portfolio .template:hover{
-    opacity: 0.5;
-    cursor: default;
-    transform: none;
 }
 
 .portfolio .demo{
@@ -237,12 +218,6 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 25px;
     border: none;
     font-size: 14px;
-}
-.portfolio .demo:hover{
-  text-decoration: none;
-  background: #333!important;
-  color: #e74c3c;
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
 }
 
 /*----------------------------------------Footer-------------------------------------------------*/
@@ -279,11 +254,6 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 20px;
   transition: all 1s;
     transition-timing: ease-in-out;
-}
-
-#go_to-top_button:hover {
-  background-color: #e74c3c;
-    transform: rotate(720deg);
 }
 
 .fa-heart{

@@ -1,0 +1,79 @@
+/*----------------------------------------Index Page Hovers-------------------------------------------------*/
+.carousel-caption a:hover{
+  text-decoration: none;
+  background: #333;
+  color: #e74c3c;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+#about .btn:hover{
+	text-decoration: none;
+	background: #333!important;
+	color: #e74c3c;
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+.services .col-md-3:hover{
+	background-color: #e74c3c;
+	cursor: pointer;
+	transition: 0.7s;
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+.portfolio img:hover{
+	transform: scale(1.2);
+	cursor: zoom-in;
+}
+
+.portfolio .template:hover{
+    opacity: 0.5;
+    cursor: default;
+    transform: none;
+}
+
+.portfolio .demo:hover{
+	text-decoration: none;
+	background: #333!important;
+	color: #e74c3c;
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+.jumbotron .btn:hover{
+	text-decoration: none;
+	background: #333!important;
+	color: #e74c3c;
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+.profile:hover{
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: .5s;
+}
+
+#contact button:hover{
+	text-decoration: none;
+	background: #333!important;
+	color: #e74c3c;
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+.contact-info .fa-facebook:hover{
+	transform: scale(1.5);
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+.contact-info .fa-instagram:hover{
+	transform: scale(1.5);
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+.contact-info .fa-whatsapp:hover{
+	transform: scale(1.5);
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+#go_to-top_button:hover {
+	background-color: #e74c3c;
+    transform: rotate(720deg);
+}

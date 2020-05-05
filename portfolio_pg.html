@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="images/t_icon.png">
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style_portfolio.css">
-  <link rel="stylesheet" type="text/css" href="animate.css">
+  <link rel="stylesheet" type="text/css" href="hover_portfolio.css">
   <link href="https://fonts.googleapis.com/css?family=Italianno|Montserrat:400,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Poiret+One&display=swap" rel="stylesheet"> 
@@ -255,10 +255,31 @@
 <!-- Go to top button -->
 <a id="go_to-top_button" href="#header"><i class="fa fa-arrow-up"></i></a>
 
+<script type="text/javascript">
+  function is_touch_device() {
+      var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+      var mq = function(query) {
+          return window.matchMedia(query).matches;
+      }
+
+      if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+          return true;
+      }
+
+      // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+      // https://git.io/vznFH
+      var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+      return mq(query);
+  }
+
+  if (is_touch_device()) {
+      document.querySelector('link[href$="hover_portfolio.css"]').remove();
+  }
+</script>
 <script src="main.js"></script>
 <script src="smooth-scroll.js"></script>
-<script src="main.js"></script>
 <script> var scroll = new SmoothScroll('a[href*="#"]'); </script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/usm/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

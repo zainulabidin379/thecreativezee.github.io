@@ -1,0 +1,35 @@
+/*----------------------------------------Portfolio Page Hovers-------------------------------------------------*/
+.jumbotron .portfolioLinks:hover{
+  text-decoration: none;
+  box-shadow: 0 0 10px #e74c3c,
+              0 0 10px #e74c3c;
+}
+
+.portfolio img:hover{
+  transform: scale(1.2);
+  cursor: zoom-in;
+}
+
+.portfolio .template:hover{
+    opacity: 0.5;
+    cursor: default;
+    transform: none;
+}
+
+.portfolio .demo:hover{
+  text-decoration: none;
+  background: #333!important;
+  color: #e74c3c;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+}
+
+.portfolio .postr:hover{
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.5);
+  transition: .5s;
+  transform: scale(0.9);
+}
+
+#go_to-top_button:hover {
+  background-color: #e74c3c;
+    transform: rotate(720deg);
+}

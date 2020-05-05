@@ -164,7 +164,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid #e74c3c;
   }
   .nav .nav-links {
     position: absolute;
@@ -250,12 +250,6 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 25px;
 }
 
-.carousel-caption a:hover{
-  text-decoration: none;
-  background: #333;
-  color: #e74c3c;
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-}
 
 /*-----------------------------------------About----------------------------------------------------*/
 #about{
@@ -275,12 +269,6 @@ body::-webkit-scrollbar-thumb:hover {
 	padding: 12px 18px;
     border-radius: 25px;
 
-}
-#about .btn:hover{
-	text-decoration: none;
-	background: #333!important;
-	color: #e74c3c;
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
 }
 
 .about-content{
@@ -350,12 +338,6 @@ body::-webkit-scrollbar-thumb:hover {
 	color: #ccc;
 }
 
-.services .col-md-3:hover{
-	background-color: #e74c3c;
-	cursor: pointer;
-	transition: 0.7s;
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-}
 
 /*----------------------------------------Portfolio-------------------------------------------------*/
 .jumbotron{
@@ -369,6 +351,7 @@ body::-webkit-scrollbar-thumb:hover {
 	padding-bottom: 50px;
 	font-weight: 500;
 	font-size: 7vh;
+	margin-top: 20px;
 }
 
 .jumbotron h5::after{
@@ -405,21 +388,13 @@ body::-webkit-scrollbar-thumb:hover {
 .row.no-padding [class*=col-]{
 	padding: 0;
 }
-.portfolio img:hover{
-	transform: scale(1.2);
-	cursor: zoom-in;
-}
+
 .portfolio {
 	overflow: hidden;
 }
 .portfolio .template{
 	opacity: 1;
 	transition: .3s ease-in-out;
-}
-.portfolio .template:hover{
-    opacity: 0.5;
-    cursor: default;
-    transform: none;
 }
 
 .portfolio .demo{
@@ -435,27 +410,15 @@ body::-webkit-scrollbar-thumb:hover {
     border: none;
     font-size: 12px;
 }
-.portfolio .demo:hover{
-	text-decoration: none;
-	background: #333!important;
-	color: #e74c3c;
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-}
 
 
 
 .jumbotron .btn{
 	background-color: #e74c3c!important;
-	margin-top: 70px;
+	margin-top: 30px;
 	color: #fff;
 	padding: 15px 25px;
     border-radius: 30px;
-}
-.jumbotron .btn:hover{
-	text-decoration: none;
-	background: #333!important;
-	color: #e74c3c;
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
 }
 
 /*----------------------------------------Our Team-------------------------------------------------*/
@@ -493,12 +456,6 @@ body::-webkit-scrollbar-thumb:hover {
 .profile{
 	padding: 50px 10px 10px;
 	background-color: #efefef;
-}
-
-.profile:hover{
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
-	cursor: pointer;
-	transition: .5s;
 }
 
 .team-img{
@@ -595,12 +552,6 @@ blockquote::after{
 	padding: 12px 18px;
     border-radius: 25px;
 }
-#contact button:hover{
-	text-decoration: none;
-	background: #333!important;
-	color: #e74c3c;
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-}
 
 .follow{
 	background: #fff;
@@ -627,10 +578,6 @@ blockquote::after{
 	padding: 5px 10px;
 	border-radius: 8px;
 }
-.contact-info .fa-facebook:hover{
-	transform: scale(1.5);
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-}
 
 .contact-info .fa-instagram{
 	font-size: 25px;
@@ -638,20 +585,12 @@ blockquote::after{
 	padding: 5px 8px;
 	border-radius: 8px;
 }
-.contact-info .fa-instagram:hover{
-	transform: scale(1.5);
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-}
 
 .contact-info .fa-whatsapp{
 	font-size: 25px;
 	border: 2px solid #e74c3c;
 	padding: 5px 8px;
 	border-radius: 8px;
-}
-.contact-info .fa-whatsapp:hover{
-	transform: scale(1.5);
-	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
 }
 
 /*----------------------------------------Footer-------------------------------------------------*/
@@ -688,11 +627,6 @@ blockquote::after{
 	border-radius: 20px;
 	transition: all 1s;
     transition-timing: ease-in-out;
-}
-
-#go_to-top_button:hover {
-	background-color: #e74c3c;
-    transform: rotate(720deg);
 }
 
 .fa-heart{

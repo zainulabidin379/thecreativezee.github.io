@@ -6,12 +6,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="hover_index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Italianno|Montserrat:400,900&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="nojQuery">
 <!---------------------------------------PreLoader--------------------------------------------------->
 	<div id="loader">
 		<div class="indicator"> 
@@ -194,38 +195,6 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
-				<div class="portfolio">
-					<a href="images/logo5.png" target="_blank">
-						<img src="images/logo5.png">
-					</a>
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="portfolio">
-					<a href="images/logo6.png" target="_blank">
-						<img src="images/logo6.png">
-					</a>
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="portfolio">
-					<a href="images/logo7.png" target="_blank">
-						<img src="images/logo7.png">
-					</a>
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="portfolio">
-					<a href="images/logo8.png" target="_blank">
-						<img src="images/logo8.png">
-					</a>
-				</div>
-			</div>
-
 		</div>
 		<h6>Web Templates</h6>
 	    <div class="row no-padding">
@@ -328,7 +297,7 @@
 </footer>
 
 <!-- Go to top button -->
-<a id="go_to-top_button" href="#header"><i class="fa fa-arrow-up"></i></a>
+<a id="go_to-top_button" class="gttb_hover" href="#header"><i class="fa fa-arrow-up"></i></a>
 
 <script type="text/javascript">
 	var overlay = document.getElementById("loader");
@@ -337,6 +306,28 @@
 	  overlay.style.display = 'none';
 	})
 
+</script>
+
+<script type="text/javascript">
+	function is_touch_device() {
+	    var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+	    var mq = function(query) {
+	        return window.matchMedia(query).matches;
+	    }
+
+	    if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+	        return true;
+	    }
+
+	    // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+	    // https://git.io/vznFH
+	    var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+	    return mq(query);
+	}
+
+	if (is_touch_device()) {
+	    document.querySelector('link[href$="hover_index.css"]').remove();
+	}
 </script>
 <script src="smooth-scroll.js"></script>
 <script src="main.js"></script>
